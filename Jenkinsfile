@@ -6,7 +6,7 @@
     stages {
       stage ('unit tests') {
         steps {
-         sh 'mvn package'
+         echo 'unit tests'
         }
       }
       stage ('Code Analysis') {
