@@ -11,7 +11,7 @@
       }
       stage ('Code Analysis') {
          steps {
-            echo 'Code Analysis'
+           sh 'sudo sonar-scanner -Dsonar.host.url=http://172.31.68.239:9000 -Dsonar.login=admin -Dsonar.password=DevOps321 -Dsonar.projectkey=user'
          }
       }
 
